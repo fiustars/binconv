@@ -1,9 +1,13 @@
+
 public class BitString {
   // Array of bits
   private int[] bits;
   // Takes in a bitstring and ties data to class
   public BitString(String bitstring) {
-    // TODO: Initialization logic
+   bits = new int[bitstring.length()];
+   for(int a =0; a < bitstring.length(); a++){
+       bits[a] = bitstring.charAt(a) - 48;
+   }   
   }
   // Returns BitString as an array
   public int[] getBitString() {
