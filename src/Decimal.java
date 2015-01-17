@@ -7,7 +7,7 @@ public class Decimal {
   }
   // Gets value of Decimal as an integer --> PAUL HAS DIBS
   public int getValue() {
-    return 0;
+    return value;
   }
   // Converts Decimal to BitString --> JAHKELL HAS DIBS
   public BitString toBitString() {
