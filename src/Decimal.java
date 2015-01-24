@@ -11,7 +11,16 @@ public class Decimal {
   }
   // Converts Decimal to BitString --> JAHKELL HAS DIBS
   public BitString toBitString() {
-    return null;
+        String string = "";                           //declares a String to pass to BitString constructor 
+        if (value == 0) {
+            string = string + 0;                      //the BitString is simply "0" if the decimal value is 0                 
+        }
+        while (value > 0) {                           
+            string = value % 2 + string;              //calculates the BitString value of a Decimal number...
+            value = value / 2;                        //in String form
+        }
+        BitString bitstring = new BitString(string);  //passes String to BitString constructor
+        return bitstring;                             //return bitstring of converted decimal
   }
   // Returns String representation of object --> CARLOS HAS DIBS
   @Override
