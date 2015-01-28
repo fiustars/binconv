@@ -1,4 +1,3 @@
-
 public class BitString {
   // Array of bits
   private int[] bits;
@@ -11,15 +10,31 @@ public class BitString {
   }
   // Returns BitString as an array --> JONATHAN HAS DIBS
   public int[] getBitString() {
-    return null;
+    return bits;
   }
   // Returns BitString as a Decimal --> GISELLE HAS DIBS
-  public Decimal toDecimal() {
-    return null;
+  public Decimal toDecimal() 
+  {
+    int dec = 0;
+    int count = 1;
+    int len  = bits.length;
+    for(int i = len - 1; i < 0; i--)
+    {
+        if(bits[i] == 1)
+          dec += Math.pow(2,count);
+        count++;
+    }
+      
+    Decimal d = new Decimal(dec);
+    return d;
   }
   // Returns BitString as a String --> HERNAN HAS DIBS
   @Override
   public String toString() {
+      for(int i = 0; i < bits.length;i++)
+      {
+         // System.out.print(bits[i]);
+      }
     return null;
   }
 }
