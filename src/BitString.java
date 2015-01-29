@@ -31,10 +31,13 @@ public class BitString {
   // Returns BitString as a String --> HERNAN HAS DIBS
   @Override
   public String toString() {
+    String str = "";
       for(int i = 0; i < bits.length;i++)
       {
-         // System.out.print(bits[i]);
+         System.out.print(bits[i]);       //Shows result (for testing)
+         str = str + bits[i];             //Add the bits one by one on the string
       }
-    return null;
+      String s = new String(str);         //Returns the string
+    return s;
   }
 }
