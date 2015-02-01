@@ -1,4 +1,4 @@
-public class Hex {
+public class Hex implements Numeric{
   private String[] hex; // Array to hold hex value
   // Takes in a string and ties it to class
   public Hex(String hex) {
@@ -9,4 +9,8 @@ public class Hex {
     return null;
   }
 
+  @Override
+  public int getValue() {
+    
+  }
 }
