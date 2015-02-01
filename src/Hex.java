@@ -11,6 +11,6 @@ public class Hex implements Numeric{
 
   @Override
   public int getValue() {
-    
+    return 0;
   }
 }
