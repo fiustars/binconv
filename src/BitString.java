@@ -1,5 +1,4 @@
-
-public class BitString {
+public class BitString implements Numeric{
   // Array of bits
   private int[] bits;
   // Takes in a bitstring and ties data to class --> X HAS DIBS
@@ -11,15 +10,40 @@ public class BitString {
   }
   // Returns BitString as an array --> JONATHAN HAS DIBS
   public int[] getBitString() {
-    return null;
+    return bits;
   }
   // Returns BitString as a Decimal --> GISELLE HAS DIBS
-  public Decimal toDecimal() {
-    return null;
+  public Decimal toDecimal() 
+  {
+    int dec = 0;
+    int count = 1;
+    int len  = bits.length;
+    for(int i = len - 1; i < 0; i--)
+    {
+        if(bits[i] == 1)
+          dec += Math.pow(2,count);
+        count++;
+    }
+      
+    Decimal d = new Decimal(dec);
+    return d;
   }
+  
+  @Override
+  public int getValue() {
+    return 0;
+  }
+  
   // Returns BitString as a String --> HERNAN HAS DIBS
   @Override
   public String toString() {
-    return null;
+    String str = "";
+      for(int i = 0; i < bits.length;i++)
+      {
+         System.out.print(bits[i]);       //Shows result (for testing)
+         str = str + bits[i];             //Add the bits one by one on the string
+      }
+      String s = new String(str);         //Returns the string
+    return s;
   }
 }
