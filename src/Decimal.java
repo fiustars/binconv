@@ -24,9 +24,9 @@ public class Decimal implements Numeric {
         BitString bitstring = new BitString(string);  //passes String to BitString constructor
         return bitstring;                             //return bitstring of converted decimal
   }
-  // Returns String representation of object --> CARLOS HAS DIBS
+  // Returns String representation of object --> @CARLOS YOU SNOOZE YOU LOSE
   @Override
   public String toString() {
-    return null;
+    return "" + value;
   }
 }
