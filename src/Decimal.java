@@ -1,5 +1,5 @@
 // Class to represent a Decimal number
-public class Decimal {
+public class Decimal implements Numeric {
   // int to hold value of Decimal
   private int value;
   // Takes in a number and ties to class --> KENNY HAS DIBS
@@ -7,6 +7,7 @@ public class Decimal {
     this.value = value;
   }
   // Gets value of Decimal as an integer --> PAUL HAS DIBS
+  @Override
   public int getValue() {
     return value;
   }
