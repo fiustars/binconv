@@ -31,7 +31,7 @@ public class BitString implements Numeric{
   
   @Override
   public int getValue() {
-    
+    return 0;
   }
   
   // Returns BitString as a String --> HERNAN HAS DIBS
