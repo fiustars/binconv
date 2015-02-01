@@ -1,4 +1,4 @@
-public class BitString {
+public class BitString implements Numeric{
   // Array of bits
   private int[] bits;
   // Takes in a bitstring and ties data to class --> X HAS DIBS
@@ -28,6 +28,12 @@ public class BitString {
     Decimal d = new Decimal(dec);
     return d;
   }
+  
+  @Override
+  public int getValue() {
+    
+  }
+  
   // Returns BitString as a String --> HERNAN HAS DIBS
   @Override
   public String toString() {
