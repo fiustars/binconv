@@ -3,7 +3,8 @@ public class Decimal {
   // int to hold value of Decimal
   private int value;
   // Takes in a number and ties to class --> KENNY HAS DIBS
-  public Decimal(int number) {
+  public Decimal(int value) {
+    this.value = value;
   }
   // Gets value of Decimal as an integer --> PAUL HAS DIBS
   public int getValue() {
